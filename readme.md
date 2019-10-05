@@ -1,0 +1,119 @@
+# Gwigets : totally new feeling of swing GUI
+
+> Attention : this project is still building.
+
+* To start with  
+You need to initial the "FlavorResource" class before everything start, this method is a companion object, you can directly draw a call to it:  
+```java
+FlavorResource.Initialize()
+```  
+* Congratulations that you're almost there to start using it. Let's start with a GButton object:   
+Oops, before the button , we need a frame first, right?
+```kotlin
+var frame = GFrame()
+frame.layout = null
+frame.setSize(500, 500)
+```
+or in java:  
+```java
+GFrame frame = new GFrame()
+frame.layout = null
+frame.setSize(500, 500)
+```
+
+---   
+
+so let's have a button then:
+```kotlin
+var button1 = GButton("Button_1")
+button1.setLocation(10, 10)
+button1.setSize(400, 200)
+frame.add(button1)
+```  
+or in java:
+```java
+GButton button1 = new GButton("Button_1");
+button1.setLocation(10, 10);
+button1.setSize(400, 200);
+frame.add(button1);
+```  
+
+---   
+
+The last step is to set the frame on display:   
+```kotlin
+frame.isVisible = true
+```   
+or in java:
+```java
+frame.setVisable(true);
+```   
+
+---
+
+* Well done. Let's see what happend:  
+  
+  
+![demo001](./readme/demo001.gif)
+
+---  
+   
+* Actually we got many pattern on this GButton class. Such as change it's shape and type on creating it:
+```kotlin
+var button2 = GButton(
+    "Button_2",
+    GButton.ButtonSeries.WARN_FEATURED
+)
+button2.setButtonShap(GButton.Shapes.oval)
+button2.setLocation(10, 220)
+button2.setSize(100, 100)
+frame.add(button2)
+var button3 = GButton(
+    "Button_3",
+    GButton.ButtonSeries.OK_FEATURED
+)
+button3.setButtonShap(GButton.Shapes.oval)
+button3.setLocation(110, 220)
+button3.setSize(100, 100)
+frame.add(button3)
+var button4 = GButton(
+    "CLOSE",
+    GButton.ButtonSeries.ERROR_FEATURED
+)
+button4.setLocation(10, 330)
+button4.setSize(160, 80)
+frame.add(button4)
+```   
+(Im too lazy to write the java demo part.)  
+So, what is it ?  
+![demo001](./readme/demo002.gif)  
+
+---  
+   
+* Oh well well, I know you are waiting for the "Adding mouse listener" part. Actually there is no much difference from JButton:  
+
+```kotlin
+var gPasswordField = GpasswordField(Color(52, 88, 133))
+gPasswordField.setLocation(10, 330)
+gPasswordField.setSize(250, 50)
+button4.addMouseListener(object :MouseAdapter() {
+    override fun mouseClicked(e: MouseEvent?) {
+        frame.remove(button4)
+        frame.add(gPasswordField)
+        gPasswordField.setPassword("123")
+        frame.repaint()
+    }
+})
+button1.addMouseListener(object:MouseAdapter(){
+    override fun mouseClicked(e: MouseEvent?) {
+        println(gPasswordField.getPassword())
+    }
+})
+```  
+Look at the result:  
+![demo001](./readme/demo003.gif)   
+
+---   
+   
+* But maybe you dont want to know that when you applying Gwights into your GUI, you have to use null layout.  
+* Well , I havent finish this project yet.

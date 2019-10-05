@@ -4,7 +4,6 @@ import studio.visualdust.uiwigets.theme.FlavorResource
 import studio.visualdust.uiwigets.button.GButton
 import studio.visualdust.uiwigets.frame.GFrame
 import studio.visualdust.uiwigets.passwordField.GpasswordField
-import studio.visualdust.uiwigets.textField.GtextField
 import java.awt.Color
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
@@ -46,22 +45,22 @@ fun main(args: Array<String>) {
     button4.setSize(160, 80)
     frame.add(button4)
 
-    var gtextField = GpasswordField(Color(52, 88, 133))
-    gtextField.setLocation(10, 330)
-    gtextField.setSize(250, 50)
+    var gPasswordField = GpasswordField(Color(52, 88, 133))
+    gPasswordField.setLocation(10, 330)
+    gPasswordField.setSize(250, 50)
 
     button4.addMouseListener(object : MouseAdapter() {
         override fun mouseClicked(e: MouseEvent?) {
             frame.remove(button4)
-            frame.add(gtextField)
-            gtextField.setPassword("123")
+            frame.add(gPasswordField)
+            gPasswordField.setPassword("123")
             frame.repaint()
         }
     })
 
     button1.addMouseListener(object :MouseAdapter(){
         override fun mouseClicked(e: MouseEvent?) {
-            println(gtextField.getPassword())
+            println(gPasswordField.getPassword())
         }
     })
 
