@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="430ede2e-14a8-4496-9ad4-256db40fae19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt$main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/ColorChangeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/ColorChangeThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/radioButton/GRadioButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/radioButton/GRadioButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/test/GButtonTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/test/GButtonTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
