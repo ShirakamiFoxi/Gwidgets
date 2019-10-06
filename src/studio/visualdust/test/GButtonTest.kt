@@ -2,7 +2,7 @@ package studio.visualdust.test
 
 import studio.visualdust.uiwigets.theme.FlavorResource
 import studio.visualdust.uiwigets.button.GButton
-import studio.visualdust.uiwigets.frame.GFrame
+import studio.visualdust.uiwigets.stage.GFrame
 import studio.visualdust.uiwigets.passwordField.GpasswordField
 import java.awt.Color
 import java.awt.event.MouseAdapter
@@ -30,7 +30,7 @@ fun main(args: Array<String>) {
 
     var button3 = GButton(
         "Button_3",
-        GButton.ButtonSeries.OK_FEATURED
+        GButton.ButtonSeries.NEXT_FEATURED
     )
     button3.setButtonShape(GButton.Shapes.oval)
     button3.setLocation(110, 220)
@@ -38,8 +38,8 @@ fun main(args: Array<String>) {
     frame.add(button3)
 
     var button4 = GButton(
-        "CLOSE",
-        GButton.ButtonSeries.ERROR_FEATURED
+        "OKKKK",
+        GButton.ButtonSeries.OK_FEATURED
     )
     button4.setLocation(10, 330)
     button4.setSize(160, 80)

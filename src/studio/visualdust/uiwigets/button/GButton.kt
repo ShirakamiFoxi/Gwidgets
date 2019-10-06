@@ -28,7 +28,7 @@ class GButton : JPanel, UIwigets {
     var me = this
 
     enum class ButtonSeries {
-        DEFAULT, OK_FEATURED, WARN_FEATURED, ERROR_FEATURED
+        DEFAULT, NEXT_FEATURED,OK_FEATURED, WARN_FEATURED, ERROR_FEATURED
     }
 
     constructor() {}
@@ -40,6 +40,16 @@ class GButton : JPanel, UIwigets {
         this.setDisplayText(text)
         when (buttonSeries) {
             ButtonSeries.DEFAULT -> {
+            }
+            ButtonSeries.NEXT_FEATURED -> {
+                bgColor = FlavorResource.getColor(BUTTON_BG_NEXT)
+                fgColor = FlavorResource.getColor(BUTTON_FG_NEXT)
+                onActiveBG = FlavorResource.getColor(BUTTON_BG_NEXT_FOCUSED)
+                onActiveFG = FlavorResource.getColor(BUTTON_FG_NEXT_FOCUSED)
+                activedBG = FlavorResource.getColor(BUTTON_BG_NEXT_PRESSED)
+                activedFG = FlavorResource.getColor(BUTTON_FG_NEXT_PRESSED)
+                nowBG = bgColor
+                nowFG = fgColor
             }
             ButtonSeries.OK_FEATURED -> {
                 bgColor = FlavorResource.getColor(BUTTON_BG_OK)
@@ -174,7 +184,6 @@ class ColorChangeThread : Thread {
             buttonObj.colorChangeThread.interrupt()
         }
         buttonObj.onAnimation = true
-//        println("Strat running : $this")
 
         val from_BG_RValue = buttonObj.nowBG.red * 1.0
         val from_BG_GValue = buttonObj.nowBG.green * 1.0

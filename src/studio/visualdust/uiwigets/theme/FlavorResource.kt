@@ -7,7 +7,6 @@ import java.io.File
 import java.util.*
 
 class FlavorResource {
-
     companion object {
         var lightThemeColors = Vector<Color>()
         var darkThemeColors = Vector<Color>()
@@ -46,6 +45,12 @@ class FlavorResource {
             BUTTON_FG_FOCUSED,
             BUTTON_BG_PRESSED,
             BUTTON_FG_PRESSED,
+            BUTTON_BG_NEXT,
+            BUTTON_FG_NEXT,
+            BUTTON_BG_NEXT_FOCUSED,
+            BUTTON_FG_NEXT_FOCUSED,
+            BUTTON_BG_NEXT_PRESSED,
+            BUTTON_FG_NEXT_PRESSED,
             BUTTON_BG_OK,
             BUTTON_FG_OK,
             BUTTON_BG_OK_FOCUSED,
@@ -101,29 +106,35 @@ class FlavorResource {
             "BUTTON_FG_FOCUSED" to 31,
             "BUTTON_BG_PRESSED" to 32,
             "BUTTON_FG_PRESSED" to 33,
-            "BUTTON_BG_OK" to 34,
-            "BUTTON_FG_OK" to 35,
-            "BUTTON_BG_OK_FOCUSED" to 36,
-            "BUTTON_FG_OK_FOCUSED" to 37,
-            "BUTTON_BG_OK_PRESSED" to 38,
-            "BUTTON_FG_OK_PRESSED" to 39,
-            "BUTTON_BG_WARN" to 40,
-            "BUTTON_FG_WARN" to 41,
-            "BUTTON_BG_WARN_FOCUSED" to 42,
-            "BUTTON_FG_WARN_FOCUSED" to 43,
-            "BUTTON_BG_WARN_PRESSED" to 44,
-            "BUTTON_FG_WARN_PRESSED" to 45,
-            "BUTTON_BG_ERROR" to 46,
-            "BUTTON_FG_ERROR" to 47,
-            "BUTTON_BG_ERROR_FOCUSED" to 48,
-            "BUTTON_FG_ERROR_FOCUSED" to 49,
-            "BUTTON_BG_ERROR_PRESSED" to 50,
-            "BUTTON_FG_ERROR_PRESSED" to 51,
-            "BUTTON_BG_DISABLED" to 52,
-            "BUTTON_FG_DISABLED" to 53,
-            "TEXTFIELD_BG" to 54,
-            "TEXTFIELD_FG" to 55,
-            "TEXTFIELD_WARN" to 56
+            "BUTTON_BG_NEXT" to 34,
+            "BUTTON_FG_NEXT" to 35,
+            "BUTTON_BG_NEXT_FOCUSED" to 36,
+            "BUTTON_FG_NEXT_FOCUSED" to 37,
+            "BUTTON_BG_NEXT_PRESSED" to 38,
+            "BUTTON_FG_NEXT_PRESSED" to 39,
+            "BUTTON_BG_OK" to 40,
+            "BUTTON_FG_OK" to 41,
+            "BUTTON_BG_OK_FOCUSED" to 42,
+            "BUTTON_FG_OK_FOCUSED" to 43,
+            "BUTTON_BG_OK_PRESSED" to 44,
+            "BUTTON_FG_OK_PRESSED" to 45,
+            "BUTTON_BG_WARN" to 46,
+            "BUTTON_FG_WARN" to 47,
+            "BUTTON_BG_WARN_FOCUSED" to 48,
+            "BUTTON_FG_WARN_FOCUSED" to 49,
+            "BUTTON_BG_WARN_PRESSED" to 50,
+            "BUTTON_FG_WARN_PRESSED" to 51,
+            "BUTTON_BG_ERROR" to 52,
+            "BUTTON_FG_ERROR" to 53,
+            "BUTTON_BG_ERROR_FOCUSED" to 54,
+            "BUTTON_FG_ERROR_FOCUSED" to 55,
+            "BUTTON_BG_ERROR_PRESSED" to 56,
+            "BUTTON_FG_ERROR_PRESSED" to 57,
+            "BUTTON_BG_DISABLED" to 58,
+            "BUTTON_FG_DISABLED" to 59,
+            "TEXTFIELD_BG" to 60,
+            "TEXTFIELD_FG" to 61,
+            "TEXTFIELD_WARN" to 62
         )
 
         fun Initialize() {
@@ -133,7 +144,7 @@ class FlavorResource {
             darkThemeColors = ThemeReader.readTheme(
                 File(ThemeReader.javaClass.getResource("DefaultDarkTheme.Gtheme").toURI())
             )
-            nowTheme= darkThemeColors
+            nowTheme = darkThemeColors
 
             /**
              * Initialize the theme vector
@@ -152,15 +163,15 @@ class FlavorResource {
          * set up the theme enum and the name-value mapping structure for theme choosing
          */
         enum class themeEnum {
-            DarkThemeColors,
-            LightThemeColors,
-            CustomThemeColors
+            DarkTheme,
+            LightTheme,
+            CustomTheme
         }
 
         open var themeMap = mapOf<String, Int>(
-            "DarkThemeColors" to 0,
-            "LightThemeColors" to 1,
-            "CustomThemeColors" to 2
+            "DarkTheme" to 0,
+            "LightTheme" to 1,
+            "CustomTheme" to 2
         )
 
         open fun swichTheme(theme: themeEnum) {
@@ -169,8 +180,8 @@ class FlavorResource {
             )
         }
 
-        open fun getColor(colorName: colorEnum): Color =
-            nowTheme.elementAt(colorMap.getValue(colorName.name))
+        open fun getColor(colorName: colorEnum): Color = nowTheme.elementAt(colorMap.getValue(colorName.name))
+
 
         open fun setColor(colorName: colorEnum, color: Color): Unit =
             nowTheme.setElementAt(color, colorMap.getValue(colorName.name))

@@ -10,7 +10,6 @@ class ThemeReader {
     companion object {
         fun readTheme(file: File): Vector<Color> {
             var theme = Vector<Color>()
-            var themeSize = 50
             var linedFile = LinedFile(file).linedFile
             for (line in linedFile) {
                 if (line[0] == '$') {
@@ -25,12 +24,13 @@ class ThemeReader {
                                 colorConfig.elementAt(2).toInt()
                             )
                         )
+//                        println("Now adding: $colorConfig")
                     } else throw Exception("No color pattern in $colorConfig : file $file")
                 }
             }
-            var standardThemeSize = 54
-            if (theme.size < standardThemeSize)
-                throw Exception("Theme file $file is supposed to be as $themeSize lines long, but it's only has ${theme.size} lines, this may occur some exception.")
+            var standardThemeSize = 63
+            if (theme.size != standardThemeSize)
+                throw Exception("Theme file $file is supposed to be as $standardThemeSize lines long, but it has ${theme.size} lines, this may occur some exception.")
             return theme
         }
     }
