@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="430ede2e-14a8-4496-9ad4-256db40fae19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GFrame.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/META-INF/GWigets.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/META-INF/GWigets.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/ColorChangeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/ColorChangeThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$ButtonSeries.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$ButtonSeries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$Shapes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$Shapes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$WhenMappings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$WhenMappings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion$colorEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion$colorEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion$themeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion$themeEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/ThemeReader$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/ThemeReader$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/test/GButtonTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/test/GButtonTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/button/GButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/button/GButton.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/frame/GFrame.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/FlavorResource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/FlavorResource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/ThemeReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/ThemeReader.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
