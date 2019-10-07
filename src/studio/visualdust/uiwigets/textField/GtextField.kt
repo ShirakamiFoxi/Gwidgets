@@ -32,7 +32,10 @@ class GtextField : JPanel, UIwigets {
     var tag = JPanel()
     var colorChangeThread = ColorChangeThread(this, bgColor, fgColor)
 
-    constructor() {}
+    constructor() {
+        tag.background = FlavorResource.getColor(BUTTON_BG_STATIC)
+    }
+
     constructor(tagColor: Color) {
         tag.background = tagColor
     }

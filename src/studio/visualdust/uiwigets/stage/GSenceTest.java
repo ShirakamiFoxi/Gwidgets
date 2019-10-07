@@ -1,7 +1,9 @@
 package studio.visualdust.uiwigets.stage;
 
 import studio.visualdust.uiwigets.button.GButton;
+import studio.visualdust.uiwigets.textField.GtextField;
 import studio.visualdust.uiwigets.theme.FlavorResource;
+import studio.visualdust.uiwigets.theme.FlavorResource.Companion.colorEnum;
 
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
@@ -13,20 +15,32 @@ public class GSenceTest {
         JFrame frame = new JFrame();
         frame.setLayout(null);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setSize(500, 500);
-        GSence sence = new GSence();
+        frame.setSize(500, 600);
+        GSence sence = new GSence(true);
         sence.setSize(200, 200);
         sence.setLocation(0, 0);
-        GButton bt = new GButton("gugugu1");
-        bt.setSize(100, 50);
-        bt.setLocation(20, 20);
-        sence.add(bt);
+        sence.setBackground(FlavorResource.Companion.getColor(colorEnum.CONTAINER_BG_1_STATIC));
+        GButton bt1 = new GButton("All null layout !", GButton.ButtonSeries.NEXT_FEATURED);
+        bt1.setSize(150, 50);
+        bt1.setLocation(20, 20);
+        sence.add(bt1);
+        GButton bt2 = new GButton("Try it on!");
+        bt2.setLocation(60, 100);
+        bt2.setSize(100, 40);
+        sence.add(bt2);
         frame.add(sence);
         frame.setVisible(true);
-        bt.addMouseListener(new MouseAdapter() {
+
+        GtextField gtextField = new GtextField();
+        frame.add(gtextField);
+        gtextField.setLocation(30, 510);
+        gtextField.setSize(100, 40);
+
+        bt2.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                sence.setSize(500, 500);
+                sence.setSize(Integer.valueOf(gtextField.getText()),
+                        Integer.valueOf(gtextField.getText()));
             }
         });
     }
