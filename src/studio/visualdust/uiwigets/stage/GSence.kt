@@ -11,9 +11,9 @@ class GSence : JPanel {
     var components = Vector<Component>()
     var cptConfigs = Vector<ComponentConfig>()
 
-    constructor() {
+    var autoSize = false
 
-    }
+    constructor(autoSize: Boolean) {}
 
     init {
         this.layout = null
@@ -61,29 +61,31 @@ class GSence : JPanel {
     override fun setSize(width: Int, height: Int) {
 //        var targetWidth = width
 //        var targetHeight = height
-        for (i in 0 until components.size) {
-            var targetComp = components.elementAt(i)
-            cptConfigs.setElementAt(
-                ComponentConfig(
-                    targetComp.x * 1.0 / this.width,
-                    targetComp.y * 1.0 / this.height,
-                    targetComp.width * 1.0 / this.width,
-                    targetComp.height * 1.0 / this.height
-                ), i
-            )
-        }
+        if (autoSize)
+            for (i in 0 until components.size) {
+                var targetComp = components.elementAt(i)
+                cptConfigs.setElementAt(
+                    ComponentConfig(
+                        targetComp.x * 1.0 / this.width,
+                        targetComp.y * 1.0 / this.height,
+                        targetComp.width * 1.0 / this.width,
+                        targetComp.height * 1.0 / this.height
+                    ), i
+                )
+            }
         super.setSize(width, height)
-        for (i in 0 until components.size) {
-            components.elementAt(i).setLocation(
-                (cptConfigs.elementAt(i).locXRatio * this.width).toInt(),
-                (cptConfigs.elementAt(i).locYRatio * this.height).toInt()
-            )
+        if (autoSize)
+            for (i in 0 until components.size) {
+                components.elementAt(i).setLocation(
+                    (cptConfigs.elementAt(i).locXRatio * this.width).toInt(),
+                    (cptConfigs.elementAt(i).locYRatio * this.height).toInt()
+                )
 //            println("NowLocation : ${components.elementAt(i).location}")
-            components.elementAt(i).setSize(
-                (cptConfigs.elementAt(i).widthRatio * this.width).toInt(),
-                (cptConfigs.elementAt(i).heightRatio * this.height).toInt()
-            )
+                components.elementAt(i).setSize(
+                    (cptConfigs.elementAt(i).widthRatio * this.width).toInt(),
+                    (cptConfigs.elementAt(i).heightRatio * this.height).toInt()
+                )
 //            println("NowSize : ${components.elementAt(i).size}")
-        }
+            }
     }
 }

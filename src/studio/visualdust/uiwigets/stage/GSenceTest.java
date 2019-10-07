@@ -14,7 +14,7 @@ public class GSenceTest {
         frame.setLayout(null);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setSize(500, 500);
-        GSence sence = new GSence();
+        GSence sence = new GSence(true);
         sence.setSize(200, 200);
         sence.setLocation(0, 0);
         GButton bt = new GButton("gugugu1");

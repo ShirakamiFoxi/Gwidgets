@@ -3,48 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="430ede2e-14a8-4496-9ad4-256db40fae19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/frame/GFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/Event.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/META-INF/WorkRec.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/Tag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/Resource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/common/FileWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/test/DrawImage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/test/GButtonTestKt$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/test/GButtonTestKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/test/MyPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/button/ColorChangeThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/button/GButton$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/button/GButton$ButtonSeries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/button/GButton$Shapes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/button/GButton$WhenMappings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/button/GButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/common/EventRW.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/common/LinedFile$ReaderThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/common/LinedFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/common/UIwigets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/common/UIwigetsManager$Companion$THEMES.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/common/UIwigetsManager$Companion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/common/UIwigetsManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/frame/GFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/textField/GtextField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/theme/FlavorResource$Companion$colorEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/theme/FlavorResource$Companion$themeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/theme/FlavorResource$Companion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/theme/FlavorResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/theme/ThemeReader$Companion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/uiwigets/theme/ThemeReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/webcatcher/ConnectionCatcher$Companion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/webcatcher/ConnectionCatcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/webcatcher/ConnectionUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/studio/visualdust/workrec/GUI/StudentUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WorkRec/test.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSence.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSenceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,9 +16,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
