@@ -13,7 +13,10 @@ class GSence : JPanel {
 
     var autoSize = false
 
-    constructor(autoSize: Boolean) {}
+    constructor() {}
+    constructor(boolen: Boolean) {
+        autoSize = boolen
+    }
 
     init {
         this.layout = null

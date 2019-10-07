@@ -2,7 +2,7 @@ package studio.visualdust.test
 
 import studio.visualdust.uiwigets.theme.FlavorResource
 import studio.visualdust.uiwigets.button.GButton
-import studio.visualdust.uiwigets.stage.GFrame
+import studio.visualdust.uiwigets.stage.GStage
 import studio.visualdust.uiwigets.passwordField.GpasswordField
 import java.awt.Color
 import java.awt.event.MouseAdapter
@@ -11,7 +11,7 @@ import javax.swing.WindowConstants.*
 
 fun main(args: Array<String>) {
     FlavorResource.Initialize()
-    var frame = GFrame()
+    var frame = GStage()
     frame.layout = null
     frame.setSize(500, 500)
     var button1 = GButton("Button_1")

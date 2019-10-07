@@ -6,7 +6,7 @@ import java.util.*
 import javax.swing.JFrame
 import javax.swing.JPanel
 
-class GFrame : JFrame() {
+class GStage : JFrame() {
     var glassPane = JPanel()
     var sences = Vector<GSence>()
     var senceOnDisplay: GSence? = GSence()
