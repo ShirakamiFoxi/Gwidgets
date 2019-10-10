@@ -22,6 +22,7 @@ class GButton : JPanel, UIwigets {
     override var activedFG = FlavorResource.getColor(BUTTON_FG_PRESSED)
     override var nowBG = bgColor
     override var nowFG = fgColor
+
     var colorChangeThread = ColorChangeThread(this, bgColor, fgColor)
     var label = JLabel("", JLabel.CENTER)
     var text = ""

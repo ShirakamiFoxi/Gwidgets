@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="430ede2e-14a8-4496-9ad4-256db40fae19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/ColorChangeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/ColorChangeThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/GtextField$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/GtextField$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/GtextField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/GtextField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSenceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/textField/GtextField.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/textField/GtextField.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/button/GButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/button/GButton.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +28,9 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/studio/visualdust/uiwigets/passwordField" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -118,9 +114,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.GSenceTest" />
       <item itemvalue="Kotlin.studio.visualdust.test.GButtonTestKt" />
       <item itemvalue="Kotlin.studio.visualdust.uiwigets.theme.themeEditor.MainFrameKt" />
-      <item itemvalue="Application.GSenceTest" />
     </list>
     <recent_temporary>
       <list>
@@ -140,8 +136,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569156564219</updated>
+      <workItem from="1570626417996" duration="5113000" />
+      <workItem from="1570708867577" duration="3279000" />
+      <workItem from="1570713967696" duration="615000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
