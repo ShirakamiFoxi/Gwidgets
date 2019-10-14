@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="GWigets:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="430ede2e-14a8-4496-9ad4-256db40fae19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/ColorChangeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/ColorChangeThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$ButtonSeries.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$ButtonSeries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$Shapes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$Shapes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/passwordField/GpasswordField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/passwordField/GpasswordField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/radioButton/GRadioButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/radioButton/GRadioButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/GtextField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/GtextField.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/button/GButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/button/GButton.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/passwordField/GpasswordField.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/passwordField/GpasswordField.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/progressBar/GProgressBar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/progressBar/GProgressBar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/textField/GtextField.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/textField/GtextField.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/FlavorResource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/FlavorResource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/ThemeReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/ThemeReader.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +49,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WeTable" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -138,7 +158,15 @@
       <updated>1569156564219</updated>
       <workItem from="1570626417996" duration="5113000" />
       <workItem from="1570708867577" duration="3279000" />
-      <workItem from="1570713967696" duration="615000" />
+      <workItem from="1570713967696" duration="710000" />
+      <workItem from="1570715050044" duration="886000" />
+      <workItem from="1570793810300" duration="3429000" />
+      <workItem from="1570885443834" duration="1963000" />
+      <workItem from="1570890806967" duration="1298000" />
+      <workItem from="1570944406356" duration="1005000" />
+      <workItem from="1570955580267" duration="1373000" />
+      <workItem from="1570968216350" duration="1981000" />
+      <workItem from="1571036967065" duration="4103000" />
     </task>
     <servers />
   </component>

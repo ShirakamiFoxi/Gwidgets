@@ -33,7 +33,7 @@ class GtextField : JPanel, UIwigets {
     var colorChangeThread = ColorChangeThread(this, bgColor, fgColor)
 
     constructor() {
-        tag.background = FlavorResource.getColor(BUTTON_BG_STATIC)
+        tag.background = bgColor
     }
 
     constructor(tagColor: Color) {
@@ -91,6 +91,10 @@ class GtextField : JPanel, UIwigets {
     open fun getText() = textField.text
     open fun setText(text: String) {
         textField.text = text
+    }
+
+    open fun setTagColor(color:Color){
+        tag.background=color
     }
 
     override fun refreshUI() {

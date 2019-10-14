@@ -43,8 +43,8 @@ class GButton : JPanel, UIwigets {
             ButtonSeries.DEFAULT -> {
             }
             ButtonSeries.NEXT_FEATURED -> {
-                bgColor = FlavorResource.getColor(BUTTON_BG_NEXT)
-                fgColor = FlavorResource.getColor(BUTTON_FG_NEXT)
+                bgColor = FlavorResource.getColor(BUTTON_BG_NEXT_STATIC)
+                fgColor = FlavorResource.getColor(BUTTON_FG_NEXT_STATIC)
                 onActiveBG = FlavorResource.getColor(BUTTON_BG_NEXT_FOCUSED)
                 onActiveFG = FlavorResource.getColor(BUTTON_FG_NEXT_FOCUSED)
                 activedBG = FlavorResource.getColor(BUTTON_BG_NEXT_PRESSED)
@@ -53,8 +53,8 @@ class GButton : JPanel, UIwigets {
                 nowFG = fgColor
             }
             ButtonSeries.OK_FEATURED -> {
-                bgColor = FlavorResource.getColor(BUTTON_BG_OK)
-                fgColor = FlavorResource.getColor(BUTTON_FG_OK)
+                bgColor = FlavorResource.getColor(BUTTON_BG_OK_STATIC)
+                fgColor = FlavorResource.getColor(BUTTON_FG_OK_STATIC)
                 onActiveBG = FlavorResource.getColor(BUTTON_BG_OK_FOCUSED)
                 onActiveFG = FlavorResource.getColor(BUTTON_FG_OK_FOCUSED)
                 activedBG = FlavorResource.getColor(BUTTON_BG_OK_PRESSED)
@@ -63,8 +63,8 @@ class GButton : JPanel, UIwigets {
                 nowFG = fgColor
             }
             ButtonSeries.WARN_FEATURED -> {
-                bgColor = FlavorResource.getColor(BUTTON_BG_WARN)
-                fgColor = FlavorResource.getColor(BUTTON_FG_WARN)
+                bgColor = FlavorResource.getColor(BUTTON_BG_WARN_STATIC)
+                fgColor = FlavorResource.getColor(BUTTON_FG_WARN_STATIC)
                 onActiveBG = FlavorResource.getColor(BUTTON_BG_WARN_FOCUSED)
                 onActiveFG = FlavorResource.getColor(BUTTON_FG_WARN_FOCUSED)
                 activedBG = FlavorResource.getColor(BUTTON_BG_WARN_PRESSED)
@@ -73,8 +73,8 @@ class GButton : JPanel, UIwigets {
                 nowFG = fgColor
             }
             ButtonSeries.ERROR_FEATURED -> {
-                bgColor = FlavorResource.getColor(BUTTON_BG_ERROR)
-                fgColor = FlavorResource.getColor(BUTTON_FG_ERROR)
+                bgColor = FlavorResource.getColor(BUTTON_BG_ERROR_STATIC)
+                fgColor = FlavorResource.getColor(BUTTON_FG_ERROR_STATIC)
                 onActiveBG = FlavorResource.getColor(BUTTON_BG_ERROR_FOCUSED)
                 onActiveFG = FlavorResource.getColor(BUTTON_FG_ERROR_FOCUSED)
                 activedBG = FlavorResource.getColor(BUTTON_BG_ERROR_PRESSED)
@@ -137,7 +137,7 @@ class GButton : JPanel, UIwigets {
         super.paintComponent(g)
         val g2d = g as Graphics2D
         g2d.color = nowBG
-        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)
         when (shape) {
             Shapes.rectangle -> g2d.fillRoundRect(
                 0,

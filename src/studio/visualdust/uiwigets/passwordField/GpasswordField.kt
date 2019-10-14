@@ -32,9 +32,11 @@ class GpasswordField : JPanel, UIwigets {
     var tag = JPanel()
     var colorChangeThread = ColorChangeThread(this, bgColor, fgColor)
 
-    constructor() {}
-    constructor(tagColor: Color) {
-        tag.background = tagColor
+    constructor() {
+        tag.background=bgColor
+    }
+    constructor(color: Color) {
+        tag.background = color
     }
 
     var onAnimation = false
@@ -88,6 +90,10 @@ class GpasswordField : JPanel, UIwigets {
     open fun getPassword() = passwordField.password
     open fun setPassword(password: String) {
         passwordField.text = password
+    }
+
+    open fun setTagColor(color:Color){
+        tag.background=color
     }
 
     override fun refreshUI() {

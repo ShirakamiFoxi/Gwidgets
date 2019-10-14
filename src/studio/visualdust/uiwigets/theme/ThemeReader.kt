@@ -28,7 +28,7 @@ class ThemeReader {
                     } else throw Exception("No color pattern in $colorConfig : file $file")
                 }
             }
-            var standardThemeSize = 63
+            var standardThemeSize = 83
             if (theme.size != standardThemeSize)
                 throw Exception("Theme file $file is supposed to be as $standardThemeSize lines long, but it has ${theme.size} lines, this may occur some exception.")
             return theme
