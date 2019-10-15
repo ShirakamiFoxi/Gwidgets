@@ -10,21 +10,27 @@ import javax.swing.border.Border
 
 class GProgressBar : JPanel, UIwigets {
 
-    override var bgColor = FlavorResource.getColor(FlavorResource.Companion.colorEnum.CONTAINER_FG_3_STATIC)
-    override var fgColor = FlavorResource.getColor(FlavorResource.Companion.colorEnum.CONTAINER_FG_3_STATIC)
-    override var onActiveBG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.CONTAINER_BG_3_FOCUSED)
-    override var onActiveFG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.CONTAINER_FG_3_FOCUSED)
-    override var activedBG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.CONTAINER_BG_3_PRESSED)
-    override var activedFG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.CONTAINER_FG_3_PRESSED)
+    override var bgColor = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_BG_STATIC)
+    override var fgColor = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FG_STATIC)
+    set(value) {
+        field =value
+    }
+    var ftColor = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FT_STATIC)
+    override var onActiveBG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_BG_FOCUSED)
+    override var onActiveFG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FG_FOCUSED)
+    var onActiveFT = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FT_FOCUSED)
+    override var activedBG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_BG_PRESSED)
+    override var activedFG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FG_PRESSED)
+    var activedFT = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FT_PRESSED)
     override var nowBG = bgColor
     override var nowFG = fgColor
     var fromColor = nowBG
     var toColor = nowFG
 
     var frontPanel = JPanel()
-    var textLabel = JLabel("", JLabel.CENTER)
     @JvmField
     var text = ""
+    var displayStr = ""
 
     @JvmField
     var minValue: Int
@@ -50,14 +56,17 @@ class GProgressBar : JPanel, UIwigets {
     }
 
     init {
-        this.add(textLabel)
-        textLabel.setLocation(0, 0)
-        textLabel.setSize(this.size)
+//        this.background = nowBG
+//        this.add(textLabel)
     }
 
-    var arcWidth = 0
-    var arcHeight = 0
+    var arcWidth = 10
+    var arcHeight = 10
     override fun paintComponent(g: Graphics?) {
+        super.paintComponent(g)
+        arcWidth = this.height
+        arcHeight = this.height
+        this.background = this.parent.background
         var g2d = g as Graphics2D
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON)
         g2d.color = nowBG
@@ -69,10 +78,11 @@ class GProgressBar : JPanel, UIwigets {
             arcWidth,
             arcHeight
         )
+        //todo checkout what happend here
         g2d.color = nowFG
         var coverWidth = 0
         if (nowValue - minValue > 0)
-            coverWidth = this.width * (nowValue - minValue) / (maxValue - minValue)
+            coverWidth = ((nowValue - minValue) * 1.0 / (maxValue - minValue) * this.width).toInt()
         g2d.fillRoundRect(
             0,
             0,
@@ -81,7 +91,20 @@ class GProgressBar : JPanel, UIwigets {
             arcWidth,
             arcHeight
         )
-        super.paintComponent(g)
+        g2d.color = ftColor
+        g2d.font = Font(
+            FlavorResource.getFont(FlavorResource.Companion.fontEnum.DEFAULT).name,
+            1,
+            (this.height * 0.85).toInt()
+        )
+        if (textPainted && !textSetted)
+            displayStr = ((nowValue - minValue + 1) * 100 / (maxValue - minValue+1)).toString() + "%"
+        var fontMetrics = g2d.getFontMetrics(g2d.font)
+        g2d.drawString(
+            displayStr,
+            (this.width - fontMetrics.stringWidth(displayStr)) / 2,
+            (this.height - fontMetrics.ascent - fontMetrics.descent) / 2 + fontMetrics.ascent
+        )
     }
 
     open fun setMinValue(minValue: Int) {
@@ -99,30 +122,31 @@ class GProgressBar : JPanel, UIwigets {
         this.repaint()
     }
 
+    var textSetted = false
     var textPainted = false
         set(b) {
             when (b) {
-                true -> textLabel.text = ""
-                false -> textLabel.text = text
+                true -> displayStr = text
+                false -> displayStr = ""
             }
+            repaint()
             field = b
         }
 
     open fun setText(text: String) {
         this.text = text
-        textLabel.text = when (textPainted) {
+        displayStr = when (textPainted) {
             true -> text
             false -> ""
         }
+        textSetted = true
     }
 
-    override fun setSize(d: Dimension?) {
-        textLabel.setSize(d)
-        super.setSize(d)
+    override fun setSize(d: Dimension) {
+        setSize(d.width, d.height)
     }
 
     override fun setSize(width: Int, height: Int) {
-        textLabel.setSize(width, height)
         super.setSize(width, height)
     }
 
