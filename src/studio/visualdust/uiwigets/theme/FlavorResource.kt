@@ -14,6 +14,16 @@ class FlavorResource {
         var nowTheme = darkThemeColors
 
         var fonts = Vector<Font>()
+        enum class fontEnum{
+            DEFAULT
+        }
+        open var fontMap = mapOf<String,Int>(
+            "DEFAULT" to 0
+        )
+        open fun getFont(fontName: fontEnum):Font{
+            return fonts.elementAt(fontMap.getValue(fontName.name))
+        }
+
         var themes = Vector<Vector<Color>>()
         /**
          *set up the color enum and the name-value mapping structure for in-theme color choosing
@@ -70,6 +80,7 @@ class FlavorResource {
             BUTTON_FG_ERROR_PRESSED,
             BUTTON_BG_DISABLED,
             BUTTON_FG_DISABLED,
+
             TEXTFIELD_BG_STATIC,
             TEXTFIELD_FG_STATIC,
             TEXTFIELD_BG_FOCUSED,
@@ -93,7 +104,17 @@ class FlavorResource {
             TEXTFIELD_BG_ERROR_FOCUSED,
             TEXTFIELD_FG_ERROR_FOCUSED,
             TEXTFIELD_BG_ERROR_PRESSED,
-            TEXTFIELD_FG_ERROR_PRESSED
+            TEXTFIELD_FG_ERROR_PRESSED,
+
+            PROGRESSBAR_BG_STATIC,
+            PROGRESSBAR_FG_STATIC,
+            PROGRESSBAR_FT_STATIC,
+            PROGRESSBAR_BG_FOCUSED,
+            PROGRESSBAR_FG_FOCUSED,
+            PROGRESSBAR_FT_FOCUSED,
+            PROGRESSBAR_BG_PRESSED,
+            PROGRESSBAR_FG_PRESSED,
+            PROGRESSBAR_FT_PRESSED
         }
 
         /**
@@ -152,6 +173,7 @@ class FlavorResource {
             "BUTTON_FG_ERROR_PRESSED" to 57,
             "BUTTON_BG_DISABLED" to 58,
             "BUTTON_FG_DISABLED" to 59,
+
             "TEXTFIELD_BG_STATIC" to 60,
             "TEXTFIELD_FG_STATIC" to 61,
             "TEXTFIELD_BG_FOCUSED" to 62,
@@ -175,7 +197,17 @@ class FlavorResource {
             "TEXTFIELD_BG_ERROR_FOCUSED" to 80,
             "TEXTFIELD_FG_ERROR_FOCUSED" to 81,
             "TEXTFIELD_BG_ERROR_PRESSED" to 82,
-            "TEXTFIELD_FG_ERROR_PRESSED" to 83
+            "TEXTFIELD_FG_ERROR_PRESSED" to 83,
+
+            "PROGRESSBAR_BG_STATIC" to 84,
+            "PROGRESSBAR_FG_STATIC" to 85,
+            "PROGRESSBAR_FT_STATIC" to 86,
+            "PROGRESSBAR_BG_FOCUSED" to 87,
+            "PROGRESSBAR_FG_FOCUSED" to 88,
+            "PROGRESSBAR_FT_FOCUSED" to 89,
+            "PROGRESSBAR_BG_PRESSED" to 90,
+            "PROGRESSBAR_FG_PRESSED" to 91,
+            "PROGRESSBAR_FT_PRESSED" to 92
         )
 
 

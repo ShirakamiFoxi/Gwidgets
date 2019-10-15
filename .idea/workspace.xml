@@ -8,18 +8,25 @@
   <component name="ChangeListManager">
     <list default="true" id="430ede2e-14a8-4496-9ad4-256db40fae19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/ColorChangeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/ColorChangeThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$ButtonSeries.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$ButtonSeries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$Shapes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$Shapes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/META-INF/GWigets.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/META-INF/GWigets.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/test/GButtonTestKt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/passwordField/ColorChangeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/passwordField/ColorChangeThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/passwordField/GpasswordField$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/passwordField/GpasswordField$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/passwordField/GpasswordField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/passwordField/GpasswordField.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/radioButton/GRadioButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/radioButton/GRadioButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/ColorChangeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/ColorChangeThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/GtextField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/GtextField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/button/GButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/button/GButton.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/passwordField/GpasswordField.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/passwordField/GpasswordField.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion$colorEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion$colorEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion$themeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion$themeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/ThemeReader$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/ThemeReader$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/test/GButtonTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/test/UITest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/progressBar/GProgressBar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/progressBar/GProgressBar.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/textField/GtextField.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/textField/GtextField.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/FlavorResource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/FlavorResource.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/ThemeReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/theme/ThemeReader.kt" afterDir="false" />
@@ -93,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GSenceTest">
+  <component name="RunManager" selected="Kotlin.studio.visualdust.test.UITestKt">
     <configuration name="GSenceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="studio.visualdust.uiwigets.stage.GSenceTest" />
       <module name="GWigets" />
@@ -107,15 +114,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="studio.visualdust.test.GButtonTestKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="studio.visualdust.test.UITestKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="GWigets" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="studio.visualdust.test.GButtonTestKt" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="MAIN_CLASS_NAME" value="studio.visualdust.test.UITestKt" />
+      <option name="WORKING_DIRECTORY" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,14 +142,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.GSenceTest" />
-      <item itemvalue="Kotlin.studio.visualdust.test.GButtonTestKt" />
+      <item itemvalue="Kotlin.studio.visualdust.test.UITestKt" />
       <item itemvalue="Kotlin.studio.visualdust.uiwigets.theme.themeEditor.MainFrameKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.studio.visualdust.test.UITestKt" />
         <item itemvalue="Application.GSenceTest" />
         <item itemvalue="Kotlin.studio.visualdust.uiwigets.theme.themeEditor.MainFrameKt" />
-        <item itemvalue="Kotlin.studio.visualdust.test.GButtonTestKt" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +173,9 @@
       <workItem from="1570944406356" duration="1005000" />
       <workItem from="1570955580267" duration="1373000" />
       <workItem from="1570968216350" duration="1981000" />
-      <workItem from="1571036967065" duration="4103000" />
+      <workItem from="1571036967065" duration="4357000" />
+      <workItem from="1571049897219" duration="1043000" />
+      <workItem from="1571121935378" duration="10867000" />
     </task>
     <servers />
   </component>

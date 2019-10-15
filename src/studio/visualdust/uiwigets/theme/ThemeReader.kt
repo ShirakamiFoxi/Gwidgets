@@ -13,7 +13,6 @@ class ThemeReader {
             var linedFile = LinedFile(file).linedFile
             for (line in linedFile) {
                 if (line[0] == '$') {
-
                     var colorConfig = line.substring(1, line.length).split(',')
 //                    println("now resolving : $colorConfig")
                     if (colorConfig.size == 3) {
@@ -28,7 +27,7 @@ class ThemeReader {
                     } else throw Exception("No color pattern in $colorConfig : file $file")
                 }
             }
-            var standardThemeSize = 83
+            var standardThemeSize = 93
             if (theme.size != standardThemeSize)
                 throw Exception("Theme file $file is supposed to be as $standardThemeSize lines long, but it has ${theme.size} lines, this may occur some exception.")
             return theme

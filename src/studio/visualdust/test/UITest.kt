@@ -4,20 +4,22 @@ import studio.visualdust.uiwigets.theme.FlavorResource
 import studio.visualdust.uiwigets.button.GButton
 import studio.visualdust.uiwigets.stage.GStage
 import studio.visualdust.uiwigets.passwordField.GpasswordField
+import studio.visualdust.uiwigets.progressBar.GProgressBar
 import java.awt.Color
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
 import javax.swing.WindowConstants.*
+import kotlin.concurrent.thread
 
 fun main(args: Array<String>) {
     FlavorResource.Initialize()
-    var frame = GStage()
-    frame.layout = null
-    frame.setSize(500, 500)
+    var stage = GStage()
+    stage.layout = null
+    stage.setSize(500, 600)
     var button1 = GButton("Button_1")
     button1.setLocation(10, 10)
     button1.setSize(400, 200)
-    frame.add(button1)
+    stage.add(button1)
 
     var button2 = GButton(
         "Button_2",
@@ -26,7 +28,7 @@ fun main(args: Array<String>) {
     button2.setButtonShape(GButton.Shapes.oval)
     button2.setLocation(10, 220)
     button2.setSize(100, 100)
-    frame.add(button2)
+    stage.add(button2)
 
     var button3 = GButton(
         "Button_3",
@@ -35,7 +37,7 @@ fun main(args: Array<String>) {
     button3.setButtonShape(GButton.Shapes.oval)
     button3.setLocation(110, 220)
     button3.setSize(100, 100)
-    frame.add(button3)
+    stage.add(button3)
 
     var button4 = GButton(
         "OKKKK",
@@ -43,7 +45,7 @@ fun main(args: Array<String>) {
     )
     button4.setLocation(10, 330)
     button4.setSize(160, 80)
-    frame.add(button4)
+    stage.add(button4)
 
     var gPasswordField = GpasswordField(Color(52, 88, 133))
     gPasswordField.setLocation(10, 330)
@@ -51,20 +53,37 @@ fun main(args: Array<String>) {
 
     button4.addMouseListener(object : MouseAdapter() {
         override fun mouseClicked(e: MouseEvent?) {
-            frame.remove(button4)
-            frame.add(gPasswordField)
+            stage.remove(button4)
+            stage.add(gPasswordField)
             gPasswordField.setPassword("123")
-            frame.repaint()
+            stage.repaint()
         }
     })
 
-    button1.addMouseListener(object :MouseAdapter(){
+    button1.addMouseListener(object : MouseAdapter() {
         override fun mouseClicked(e: MouseEvent?) {
             println(gPasswordField.getPassword())
         }
     })
 
-    frame.contentPane.background = FlavorResource.getColor(FlavorResource.Companion.colorEnum.CONTAINER_BG_0_STATIC)
-    frame.isVisible = true
-    frame.defaultCloseOperation = EXIT_ON_CLOSE
+    var progressBar = GProgressBar(1, 100)
+    progressBar.setSize(200, 20)
+    progressBar.setLocation(10, 440)
+//    progressBar.setValue(5)
+    progressBar.textPainted = true
+    stage.add(progressBar)
+    button2.addMouseListener(object : MouseAdapter() {
+        override fun mousePressed(e: MouseEvent?) {
+            thread {
+                for (i in 0..100) {
+                    Thread.sleep(10)
+                    progressBar.setValue(i)
+                }
+            }
+        }
+    })
+
+    stage.contentPane.background = FlavorResource.getColor(FlavorResource.Companion.colorEnum.CONTAINER_BG_0_STATIC)
+    stage.isVisible = true
+    stage.defaultCloseOperation = EXIT_ON_CLOSE
 }
