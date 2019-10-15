@@ -60,6 +60,7 @@ frame.setVisable(true);
    
 * Actually we got many pattern on this GButton class. Such as change it's shape and type on creating it:
 ```kotlin
+//kotlin code
 var button2 = GButton(
     "Button_2",
     GButton.ButtonSeries.WARN_FEATURED
@@ -114,6 +115,32 @@ Look at the result:
 ![demo001](./readme/demo003.gif)   
 
 ---   
+
+As you wish , we have some kinds of progress bar, too  
+```kotlin
+//kotlin code
+var progressBar = GProgressBar(1, 100)
+    progressBar.setSize(200, 20)
+    progressBar.setLocation(10, 440)
+//    progressBar.setValue(5)
+    progressBar.textPainted = true
+    stage.add(progressBar)
+    button2.addMouseListener(object : MouseAdapter() {
+        override fun mousePressed(e: MouseEvent?) {
+            thread {
+                for (i in 0..100) {
+                    Thread.sleep(10)
+                    progressBar.setValue(i)
+                }
+            }
+        }
+    })
+```  
+See what happened here:  
+
+![demo005](./readme/demo005.gif)  
+
+---
    
 * But maybe you dont want to know that when you applying Gwights into your GUI, you have to use null layout.  
 * Well , I havent finish this project yet.
