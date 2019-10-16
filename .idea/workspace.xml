@@ -6,7 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="430ede2e-14a8-4496-9ad4-256db40fae19" name="Default Changelist" comment="" />
+    <list default="true" id="430ede2e-14a8-4496-9ad4-256db40fae19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/ComponentConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/ComponentConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSence.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSenceTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +24,8 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="Kotlin File" />
-        <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.studio.visualdust.test.UITestKt">
+  <component name="RunManager" selected="Application.GSenceTest">
     <configuration name="GSenceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="studio.visualdust.uiwigets.stage.GSenceTest" />
       <module name="GWigets" />
@@ -123,8 +129,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.studio.visualdust.test.UITestKt" />
         <item itemvalue="Application.GSenceTest" />
+        <item itemvalue="Kotlin.studio.visualdust.test.UITestKt" />
         <item itemvalue="Kotlin.studio.visualdust.uiwigets.theme.themeEditor.MainFrameKt" />
       </list>
     </recent_temporary>
@@ -152,6 +158,8 @@
       <workItem from="1571036967065" duration="4357000" />
       <workItem from="1571049897219" duration="1043000" />
       <workItem from="1571121935378" duration="11030000" />
+      <workItem from="1571134852271" duration="3000000" />
+      <workItem from="1571229258851" duration="5672000" />
     </task>
     <servers />
   </component>

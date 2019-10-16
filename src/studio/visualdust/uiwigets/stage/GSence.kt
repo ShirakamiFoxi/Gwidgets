@@ -11,11 +11,12 @@ class GSence : JPanel {
     var components = Vector<Component>()
     var cptConfigs = Vector<ComponentConfig>()
 
-    var autoSize = false
+    var defaultBindType = ComponentConfig.BindTypes.NULL
 
     constructor() {}
-    constructor(boolen: Boolean) {
-        autoSize = boolen
+
+    constructor(bindType: ComponentConfig.BindTypes) {
+        this.defaultBindType = bindType
     }
 
     init {
@@ -23,17 +24,13 @@ class GSence : JPanel {
     }
 
     override fun add(comp: Component): Component {
+        return this.add(comp, defaultBindType)
+    }
+
+    fun add(comp: Component, bindType: ComponentConfig.BindTypes): Component {
         if (!components.contains(comp)) {
             components.add(comp)
-            cptConfigs.add(ComponentConfig())
-//            cptConfigs.add(
-//                ComponentConfig(
-//                    comp.x / this.width * 1.0,
-//                    comp.y / this.height * 1.0,
-//                    comp.width / this.width * 1.0,
-//                    comp.height / this.height * 1.0
-//                )
-//            )
+            cptConfigs.add(ComponentConfig(bindType))
         }
         return super.add(comp)
     }
@@ -64,31 +61,38 @@ class GSence : JPanel {
     override fun setSize(width: Int, height: Int) {
 //        var targetWidth = width
 //        var targetHeight = height
-        if (autoSize)
-            for (i in 0 until components.size) {
-                var targetComp = components.elementAt(i)
-                cptConfigs.setElementAt(
-                    ComponentConfig(
-                        targetComp.x * 1.0 / this.width,
-                        targetComp.y * 1.0 / this.height,
-                        targetComp.width * 1.0 / this.width,
-                        targetComp.height * 1.0 / this.height
-                    ), i
-                )
+        for (i in 0 until components.size) {
+            when (cptConfigs.elementAt(i).bindType) {
+                ComponentConfig.BindTypes.SIZE_BIND -> {
+                    var targetComp = components.elementAt(i)
+                    cptConfigs.setElementAt(
+                        ComponentConfig(
+                            targetComp.x * 1.0 / this.width,
+                            targetComp.y * 1.0 / this.height,
+                            targetComp.width * 1.0 / this.width,
+                            targetComp.height * 1.0 / this.height
+                        ), i
+                    )
+                    cptConfigs.elementAt(i).bindType = ComponentConfig.BindTypes.SIZE_BIND
+                }
             }
+        }
         super.setSize(width, height)
-        if (autoSize)
-            for (i in 0 until components.size) {
-                components.elementAt(i).setLocation(
-                    (cptConfigs.elementAt(i).locXRatio * this.width).toInt(),
-                    (cptConfigs.elementAt(i).locYRatio * this.height).toInt()
-                )
+        for (i in 0 until components.size) {
+            when (cptConfigs.elementAt(i).bindType) {
+                ComponentConfig.BindTypes.SIZE_BIND -> {
+                    components.elementAt(i).setLocation(
+                        (cptConfigs.elementAt(i).locXRatio * this.width).toInt(),
+                        (cptConfigs.elementAt(i).locYRatio * this.height).toInt()
+                    )
 //            println("NowLocation : ${components.elementAt(i).location}")
-                components.elementAt(i).setSize(
-                    (cptConfigs.elementAt(i).widthRatio * this.width).toInt(),
-                    (cptConfigs.elementAt(i).heightRatio * this.height).toInt()
-                )
+                    components.elementAt(i).setSize(
+                        (cptConfigs.elementAt(i).widthRatio * this.width).toInt(),
+                        (cptConfigs.elementAt(i).heightRatio * this.height).toInt()
+                    )
 //            println("NowSize : ${components.elementAt(i).size}")
+                }
             }
+        }
     }
 }

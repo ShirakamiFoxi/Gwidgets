@@ -16,9 +16,9 @@ public class GSenceTest {
         frame.setLayout(null);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setSize(500, 600);
-        GSence sence = new GSence(true);
-        sence.setSize(200, 200);
+        GSence sence = new GSence(ComponentConfig.BindTypes.SIZE_BIND);
         sence.setLocation(0, 0);
+        sence.setSize(300, 300);
         sence.setBackground(FlavorResource.Companion.getColor(colorEnum.CONTAINER_BG_1_STATIC));
         GButton bt1 = new GButton("All null layout !", GButton.ButtonSeries.NEXT_FEATURED);
         bt1.setSize(150, 50);
@@ -39,8 +39,8 @@ public class GSenceTest {
         bt2.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                sence.setSize(Integer.valueOf(gtextField.getText()),
-                        Integer.valueOf(gtextField.getText()));
+                sence.setSize(Integer.parseInt(gtextField.getText()),
+                        Integer.parseInt(gtextField.getText()));
             }
         });
     }
