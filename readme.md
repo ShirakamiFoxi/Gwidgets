@@ -10,16 +10,17 @@ FlavorResource.Initialize()
 * Congratulations that you're almost there to start using it. Let's start with a GButton object:   
 Oops, before the button , we need a frame first, right?
 ```kotlin
-var frame = GFrame()
-frame.layout = null
-frame.setSize(500, 500)
+var stage = GStage()
+stage.layout = null
+stage.setSize(500, 600)
 ```
 or in java:  
 ```java
-GFrame frame = new GFrame()
-frame.layout = null
-frame.setSize(500, 500)
-```
+GStage stage = new GStage()
+stage.layout = null
+stage.setSize(500, 500)
+```  
+Oops, I almostly forgot . Here wo use GStage as the container, witch you consider as the JFrame. Well, JFrame will be okay, too. but GStage will be a more powerful "frame-like-class" then as I will add some null-Layout auto size or auto align method.....
 
 ---   
 
@@ -28,25 +29,25 @@ so let's have a button then:
 var button1 = GButton("Button_1")
 button1.setLocation(10, 10)
 button1.setSize(400, 200)
-frame.add(button1)
+stage.add(button1)
 ```  
 or in java:
 ```java
 GButton button1 = new GButton("Button_1");
 button1.setLocation(10, 10);
 button1.setSize(400, 200);
-frame.add(button1);
+stage.add(button1);
 ```  
 
 ---   
 
 The last step is to set the frame on display:   
 ```kotlin
-frame.isVisible = true
+stage.isVisible = true
 ```   
 or in java:
 ```java
-frame.setVisable(true);
+stage.setVisable(true);
 ```   
 
 ---
@@ -68,7 +69,7 @@ var button2 = GButton(
 button2.setButtonShap(GButton.Shapes.oval)
 button2.setLocation(10, 220)
 button2.setSize(100, 100)
-frame.add(button2)
+stage.add(button2)
 var button3 = GButton(
     "Button_3",
     GButton.ButtonSeries.OK_FEATURED
@@ -76,14 +77,14 @@ var button3 = GButton(
 button3.setButtonShap(GButton.Shapes.oval)
 button3.setLocation(110, 220)
 button3.setSize(100, 100)
-frame.add(button3)
+stage.add(button3)
 var button4 = GButton(
     "CLOSE",
     GButton.ButtonSeries.ERROR_FEATURED
 )
 button4.setLocation(10, 330)
 button4.setSize(160, 80)
-frame.add(button4)
+stage.add(button4)
 ```   
 (Im too lazy to write the java demo part.)  
 So, what is it ?  
@@ -99,10 +100,10 @@ gPasswordField.setLocation(10, 330)
 gPasswordField.setSize(250, 50)
 button4.addMouseListener(object :MouseAdapter() {
     override fun mouseClicked(e: MouseEvent?) {
-        frame.remove(button4)
-        frame.add(gPasswordField)
+        stage.remove(button4)
+        stage.add(gPasswordField)
         gPasswordField.setPassword("123")
-        frame.repaint()
+        stage.repaint()
     }
 })
 button1.addMouseListener(object:MouseAdapter(){
