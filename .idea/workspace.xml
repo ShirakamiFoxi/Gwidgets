@@ -8,10 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="430ede2e-14a8-4496-9ad4-256db40fae19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/ComponentConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/ComponentConfig.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSence.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GSenceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +22,8 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -159,7 +157,10 @@
       <workItem from="1571049897219" duration="1043000" />
       <workItem from="1571121935378" duration="11030000" />
       <workItem from="1571134852271" duration="3000000" />
-      <workItem from="1571229258851" duration="5672000" />
+      <workItem from="1571229258851" duration="5779000" />
+      <workItem from="1571236822509" duration="34000" />
+      <workItem from="1571296650461" duration="3101000" />
+      <workItem from="1571309833495" duration="1311000" />
     </task>
     <servers />
   </component>

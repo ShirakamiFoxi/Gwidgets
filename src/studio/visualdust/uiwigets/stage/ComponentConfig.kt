@@ -8,8 +8,21 @@ class ComponentConfig {
     var widthRatio = 0.00000
     var heightRatio = 0.00000
 
-    enum class BindSides {
-        LEFT, RIGHT, TOP, BOTTOM, MID, POINT
+    enum class RowBindSides {
+        LEFT, RIGHT, MID, NULL
+    }
+
+    enum class ColmBindSides {
+        BOTTOM, TOP, MID, NULL
+    }
+
+    var rowBindType = RowBindSides.NULL
+    var colmBindType = ColmBindSides.NULL
+    fun setRowBind(rowBindSide: RowBindSides) {
+        this.rowBindType=rowBindType
+    }
+    fun setColmBind(colmBindSide: ColmBindSides) {
+        this.colmBindType=colmBindType
     }
 
     enum class BindTypes {
@@ -19,12 +32,12 @@ class ComponentConfig {
     var bindPoint = Dimension(-1, -1)
     var bindType = BindTypes.NULL
 
-    constructor(bindType: BindTypes){
-        this.bindType=bindType
+    constructor(bindType: BindTypes) {
+        this.bindType = bindType
     }
 
     constructor() {
-        this.bindType=BindTypes.NULL
+        this.bindType = BindTypes.NULL
     }
 
     constructor(

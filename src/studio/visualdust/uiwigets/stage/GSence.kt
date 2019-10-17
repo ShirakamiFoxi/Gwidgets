@@ -63,6 +63,9 @@ class GSence : JPanel {
 //        var targetHeight = height
         for (i in 0 until components.size) {
             when (cptConfigs.elementAt(i).bindType) {
+                /**
+                 * SIZEBIND Condition , part one
+                 */
                 ComponentConfig.BindTypes.SIZE_BIND -> {
                     var targetComp = components.elementAt(i)
                     cptConfigs.setElementAt(
@@ -75,22 +78,35 @@ class GSence : JPanel {
                     )
                     cptConfigs.elementAt(i).bindType = ComponentConfig.BindTypes.SIZE_BIND
                 }
+                /**
+                 * SIDEBIND Condition, part one
+                 */
+                ComponentConfig.BindTypes.SIDE_BIND -> {
+
+                }
             }
         }
         super.setSize(width, height)
         for (i in 0 until components.size) {
             when (cptConfigs.elementAt(i).bindType) {
+                /**
+                 * SIZEBIND Condition, part two
+                 */
                 ComponentConfig.BindTypes.SIZE_BIND -> {
                     components.elementAt(i).setLocation(
                         (cptConfigs.elementAt(i).locXRatio * this.width).toInt(),
                         (cptConfigs.elementAt(i).locYRatio * this.height).toInt()
                     )
-//            println("NowLocation : ${components.elementAt(i).location}")
                     components.elementAt(i).setSize(
                         (cptConfigs.elementAt(i).widthRatio * this.width).toInt(),
                         (cptConfigs.elementAt(i).heightRatio * this.height).toInt()
                     )
-//            println("NowSize : ${components.elementAt(i).size}")
+                }
+                /**
+                 * SIDEBIND Condition, part two
+                 */
+                ComponentConfig.BindTypes.SIDE_BIND -> {
+
                 }
             }
         }
