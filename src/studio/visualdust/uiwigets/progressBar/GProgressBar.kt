@@ -12,9 +12,9 @@ class GProgressBar : JPanel, UIwigets {
 
     override var bgColor = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_BG_STATIC)
     override var fgColor = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FG_STATIC)
-    set(value) {
-        field =value
-    }
+        set(value) {
+            field = value
+        }
     var ftColor = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FT_STATIC)
     override var onActiveBG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_BG_FOCUSED)
     override var onActiveFG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FG_FOCUSED)
@@ -98,7 +98,7 @@ class GProgressBar : JPanel, UIwigets {
             (this.height * 0.85).toInt()
         )
         if (textPainted && !textSetted)
-            displayStr = ((nowValue - minValue + 1) * 100 / (maxValue - minValue+1)).toString() + "%"
+            displayStr = ((nowValue - minValue + 1) * 100 / (maxValue - minValue + 1)).toString() + "%"
         var fontMetrics = g2d.getFontMetrics(g2d.font)
         g2d.drawString(
             displayStr,
@@ -151,6 +151,19 @@ class GProgressBar : JPanel, UIwigets {
     }
 
     override fun refreshUI() {
-
+        bgColor = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_BG_STATIC)
+        fgColor = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FG_STATIC)
+        ftColor = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FT_STATIC)
+        onActiveBG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_BG_FOCUSED)
+        onActiveFG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FG_FOCUSED)
+        onActiveFT = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FT_FOCUSED)
+        activedBG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_BG_PRESSED)
+        activedFG = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FG_PRESSED)
+        activedFT = FlavorResource.getColor(FlavorResource.Companion.colorEnum.PROGRESSBAR_FT_PRESSED)
+        nowBG = bgColor
+        nowFG = fgColor
+        fromColor = nowBG
+        toColor = nowFG
+        this.repaint()
     }
 }

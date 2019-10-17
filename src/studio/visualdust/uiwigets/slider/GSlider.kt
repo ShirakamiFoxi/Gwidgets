@@ -17,7 +17,7 @@ class GSlider : JPanel, UIwigets {
     override var nowFG = fgColor
 
     constructor() {
-        
+
     }
 
     init {

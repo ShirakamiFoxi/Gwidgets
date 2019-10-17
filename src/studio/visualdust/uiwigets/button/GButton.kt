@@ -29,7 +29,7 @@ class GButton : JPanel, UIwigets {
     var me = this
 
     enum class ButtonSeries {
-        DEFAULT, NEXT_FEATURED,OK_FEATURED, WARN_FEATURED, ERROR_FEATURED
+        DEFAULT, NEXT_FEATURED, OK_FEATURED, WARN_FEATURED, ERROR_FEATURED
     }
 
     constructor() {}
@@ -158,6 +158,15 @@ class GButton : JPanel, UIwigets {
     }
 
     override fun refreshUI() {
+        bgColor = FlavorResource.getColor(BUTTON_BG_STATIC)
+        fgColor = FlavorResource.getColor(BUTTON_FG_STATIC)
+        onActiveBG = FlavorResource.getColor(BUTTON_BG_FOCUSED)
+        onActiveFG = FlavorResource.getColor(BUTTON_FG_FOCUSED)
+        activedBG = FlavorResource.getColor(BUTTON_BG_PRESSED)
+        activedFG = FlavorResource.getColor(BUTTON_FG_PRESSED)
+        nowBG = bgColor
+        nowFG = fgColor
+        this.repaint()
     }
 
     var onAnimation = false

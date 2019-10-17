@@ -98,7 +98,15 @@ class GtextField : JPanel, UIwigets {
     }
 
     override fun refreshUI() {
-
+        bgColor = FlavorResource.getColor(CONTAINER_BG_2_STATIC)
+        fgColor = FlavorResource.getColor(CONTAINER_FG_2_STATIC)
+        onActiveBG = FlavorResource.getColor(CONTAINER_BG_2_FOCUSED)
+        onActiveFG = FlavorResource.getColor(CONTAINER_FG_2_FOCUSED)
+        activedBG = FlavorResource.getColor(CONTAINER_BG_2_PRESSED)
+        activedFG = FlavorResource.getColor(CONTAINER_FG_2_PRESSED)
+        nowBG = bgColor
+        nowFG = fgColor
+        this.repaint()
     }
 }
 
