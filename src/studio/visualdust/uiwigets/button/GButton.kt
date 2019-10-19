@@ -118,9 +118,6 @@ class GButton : JPanel, UIwigets {
         label.text = text
     }
 
-    var arcWidth = 0
-    var arcHeight = 0
-
     enum class Shapes {
         rectangle, oval
     }
@@ -132,6 +129,8 @@ class GButton : JPanel, UIwigets {
         this.repaint()
     }
 
+    var arcWidth = 10
+    var arcHeight = 10
     override fun paintComponent(g: Graphics?) {
         this.background = this.parent.background
         super.paintComponent(g)
@@ -150,9 +149,9 @@ class GButton : JPanel, UIwigets {
             Shapes.oval -> g2d.fillOval(0, 0, this.width, this.height)
         }
         label.setSize(this.width, this.height)
-        var fontSize = (me.width * 1.2 / (text.length - 1)).toInt()
+        var fontSize = (me.width * 1.1 / (text.length - 0)).toInt()
         if (fontSize > (this.height * 0.9).toInt())
-            fontSize = (this.height * 0.9).toInt()
+            fontSize = (this.height * 0.8).toInt()
         label.font = Font("等线", 1, fontSize)
         label.foreground = nowFG
     }

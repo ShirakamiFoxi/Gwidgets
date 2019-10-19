@@ -78,7 +78,6 @@ class GProgressBar : JPanel, UIwigets {
             arcWidth,
             arcHeight
         )
-        //todo checkout what happend here
         g2d.color = nowFG
         var coverWidth = 0
         if (nowValue - minValue > 0)

@@ -12,6 +12,7 @@
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/passwordField/GpasswordField.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/passwordField/GpasswordField.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/progressBar/GProgressBar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/progressBar/GProgressBar.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/slider/GSlider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/slider/GSlider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GStage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/stage/GStage.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/textField/GtextField.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwigets/textField/GtextField.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,9 +25,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Kotlin File" />
         <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -39,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WeTable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CodeToMD" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -83,7 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GSenceTest">
+  <component name="RunManager" selected="Kotlin.studio.visualdust.uiwigets.slider.SlidertestKt">
     <configuration name="GSenceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="studio.visualdust.uiwigets.stage.GSenceTest" />
       <module name="GWigets" />
@@ -110,6 +111,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="studio.visualdust.uiwigets.slider.GSliderKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="GWigets" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="studio.visualdust.uiwigets.slider.GSliderKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="studio.visualdust.uiwigets.slider.SlidertestKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="GWigets" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="studio.visualdust.uiwigets.slider.SlidertestKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="studio.visualdust.uiwigets.theme.themeEditor.MainFrameKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="GWigets" />
       <option name="VM_PARAMETERS" value="" />
@@ -127,9 +154,13 @@
       <item itemvalue="Application.GSenceTest" />
       <item itemvalue="Kotlin.studio.visualdust.test.UITestKt" />
       <item itemvalue="Kotlin.studio.visualdust.uiwigets.theme.themeEditor.MainFrameKt" />
+      <item itemvalue="Kotlin.studio.visualdust.uiwigets.slider.GSliderKt" />
+      <item itemvalue="Kotlin.studio.visualdust.uiwigets.slider.SlidertestKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.studio.visualdust.uiwigets.slider.SlidertestKt" />
+        <item itemvalue="Kotlin.studio.visualdust.uiwigets.slider.GSliderKt" />
         <item itemvalue="Application.GSenceTest" />
         <item itemvalue="Kotlin.studio.visualdust.test.UITestKt" />
         <item itemvalue="Kotlin.studio.visualdust.uiwigets.theme.themeEditor.MainFrameKt" />
@@ -163,7 +194,11 @@
       <workItem from="1571229258851" duration="5779000" />
       <workItem from="1571236822509" duration="34000" />
       <workItem from="1571296650461" duration="3101000" />
-      <workItem from="1571309833495" duration="2000000" />
+      <workItem from="1571309833495" duration="4826000" />
+      <workItem from="1571316045989" duration="6000" />
+      <workItem from="1571398806330" duration="1123000" />
+      <workItem from="1571400930899" duration="3775000" />
+      <workItem from="1571449464250" duration="4940000" />
     </task>
     <servers />
   </component>
@@ -182,6 +217,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JetRunConfigurationType">
+        <watch expression="button" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/WorkRec$studio_visualdust_test_DrawActTestKt.ic" NAME="studio.visualdust.test.DrawActTestKt Coverage Results" MODIFIED="1569849278583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

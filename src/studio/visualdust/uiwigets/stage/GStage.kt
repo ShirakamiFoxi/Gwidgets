@@ -62,8 +62,8 @@ class GStage : JFrame() {
     }
 
     override fun add(comp: Component?): Component {
-        if (comp != null)
-            comp.repaint()
+//        if (comp != null)
+//            comp.repaint()
         return super.add(comp)
     }
 }

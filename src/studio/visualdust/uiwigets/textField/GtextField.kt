@@ -78,7 +78,6 @@ class GtextField : JPanel, UIwigets {
     }
 
     override fun paintComponent(g: Graphics?) {
-        //todo finish this function
         var dividerWidth = 10
         tag.setSize(tagWidth, this.height)
         tag.setLocation(0, 0)
