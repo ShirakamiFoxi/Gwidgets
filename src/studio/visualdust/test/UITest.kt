@@ -1,10 +1,10 @@
 package studio.visualdust.test
 
-import studio.visualdust.uiwigets.theme.FlavorResource
-import studio.visualdust.uiwigets.button.GButton
-import studio.visualdust.uiwigets.stage.GStage
-import studio.visualdust.uiwigets.passwordField.GpasswordField
-import studio.visualdust.uiwigets.progressBar.GProgressBar
+import studio.visualdust.uiwidgets.theme.FlavorResource
+import studio.visualdust.uiwidgets.button.GButton
+import studio.visualdust.uiwidgets.stage.GStage
+import studio.visualdust.uiwidgets.passwordField.GpasswordField
+import studio.visualdust.uiwidgets.progressBar.GProgressBar
 import java.awt.Color
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent

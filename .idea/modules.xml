@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GWigets.iml" filepath="$PROJECT_DIR$/GWigets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GWidgets.iml" filepath="$PROJECT_DIR$/GWidgets.iml" />
     </modules>
   </component>
 </project>
