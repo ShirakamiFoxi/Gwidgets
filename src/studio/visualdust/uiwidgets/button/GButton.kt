@@ -12,7 +12,7 @@ import java.lang.Exception
 import javax.swing.JLabel
 import javax.swing.JPanel
 
-class GButton : JPanel, UIwidgets {
+open class GButton : JPanel, UIwidgets {
 
     override var bgColor = FlavorResource.getColor(BUTTON_BG_STATIC)
     override var fgColor = FlavorResource.getColor(BUTTON_FG_STATIC)

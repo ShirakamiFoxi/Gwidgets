@@ -1,4 +1,4 @@
-package studio.visualdust.uiwidgets.radioButton
+package studio.visualdust.uiwidgets.singleSelection
 
 import studio.visualdust.uiwidgets.common.EventRW
 import studio.visualdust.uiwidgets.common.UIwidgets

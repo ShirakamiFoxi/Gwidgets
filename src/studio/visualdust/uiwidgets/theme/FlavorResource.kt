@@ -15,17 +15,22 @@ class FlavorResource {
 
 
         var fonts = Vector<Font>()
-        enum class fontEnum{
-            DEFAULT
+
+        enum class fontEnum {
+            DEFAULT, TAG_FONT
         }
-        var fontMap = mapOf<String,Int>(
-            "DEFAULT" to 0
+
+        var fontMap = mapOf<String, Int>(
+            "DEFAULT" to 0,
+            "TAG_FONT" to 1
         )
-        open fun getFont(fontName: fontEnum):Font{
+
+        open fun getFont(fontName: fontEnum): Font {
             return fonts.elementAt(fontMap.getValue(fontName.name))
         }
 
         var themes = Vector<Vector<Color>>()
+
         /**
          *set up the color enum and the name-value mapping structure for in-theme color choosing
          */
@@ -232,7 +237,8 @@ class FlavorResource {
             /**
              * Initialize the font vector
              */
-            fonts.add(Font("等线", 0, 10))
+            fonts.add(Font("等线", 0, 12))
+            fonts.add(Font("等线", 0, 7))
         }
 
         /**
