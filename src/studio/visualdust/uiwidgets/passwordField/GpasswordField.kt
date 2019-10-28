@@ -1,15 +1,14 @@
 package studio.visualdust.uiwidgets.passwordField
 
 import studio.visualdust.uiwidgets.common.EventRW
+import studio.visualdust.uiwidgets.common.UIwidgets
 import studio.visualdust.uiwidgets.theme.FlavorResource
 import studio.visualdust.uiwidgets.theme.FlavorResource.Companion.colorEnum.*
-import studio.visualdust.uiwidgets.common.UIwidgets
 import java.awt.Color
 import java.awt.Font
 import java.awt.Graphics
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
-import java.lang.Exception
 import javax.swing.JPanel
 import javax.swing.JPasswordField
 import javax.swing.border.EmptyBorder
@@ -77,13 +76,13 @@ class GpasswordField : JPanel, UIwidgets {
     }
 
     override fun paintComponent(g: Graphics?) {
+        super.paintComponent(g)
         var dividerWidth = 10
         tag.setSize(tagWidth, this.height)
         tag.setLocation(0, 0)
         passwordField.setSize(this.width - tagWidth - dividerWidth, this.height)
         passwordField.setLocation(tagWidth + dividerWidth, 0)
         passwordField.font = Font(passwordField.font.name, 0, (this.height * 0.5).toInt())
-        super.paintComponent(g)
     }
 
     open fun getPassword() = passwordField.password

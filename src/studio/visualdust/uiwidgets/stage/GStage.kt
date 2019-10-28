@@ -1,5 +1,6 @@
 package studio.visualdust.uiwidgets.stage
 
+import studio.visualdust.uiwidgets.theme.FlavorResource
 import java.awt.Component
 import java.awt.Graphics
 import java.util.*
@@ -12,6 +13,7 @@ class GStage : JFrame() {
     var senceOnDisplay: GSence? = GSence()
 
     init {
+        this.contentPane.background = FlavorResource.getColor(FlavorResource.Companion.colorEnum.CONTAINER_BG_0_STATIC)
         glassPane.setLocation(0, 0)
         this.add(glassPane)
         this.setGlassPane(glassPane)

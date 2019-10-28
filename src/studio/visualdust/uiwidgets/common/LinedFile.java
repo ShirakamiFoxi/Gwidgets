@@ -5,18 +5,22 @@ import java.io.*;
 import java.util.Vector;
 
 public class LinedFile {
-    private Vector<String> strings = new Vector<>();
+    public Vector<String> strings = new Vector<>();
     private ReaderThread readerThread = null;
     private String name;
     private String path;
     private long wordCount;
 
-    public LinedFile(File file) {
+    public LinedFile(File file) throws FileNotFoundException {
         readerThread = new ReaderThread(file);
         readerThread.start();
         name = file.getName();
         path = file.getPath();
         wordCount = file.length();
+    }
+
+    public LinedFile(InputStream inputStream) {
+
     }
 
     public boolean isReading() {
@@ -56,15 +60,20 @@ public class LinedFile {
 
     private class ReaderThread extends Thread {
         File readerFile = null;
+        InputStream inputStream = null;
 
-        public ReaderThread(File file) {
+        public ReaderThread(File file) throws FileNotFoundException {
             readerFile = file;
+            inputStream = new FileInputStream(readerFile);
+        }
+
+        public ReaderThread(InputStream inputStream) {
+            this.inputStream = inputStream;
         }
 
         @Override
         public void run() {
             try {
-                InputStream inputStream = new FileInputStream(readerFile);
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
                 String str = bufferedReader.readLine();
                 while (str != null) {

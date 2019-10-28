@@ -43,7 +43,7 @@ class GSlider : JPanel, UIwidgets {
     var sliderArcWidth = 3
     var sliderArcHeight = 3
     override fun paintComponent(g: Graphics?) {
-//        super.paintComponent(g)
+        super.paintComponent(g)
         var g2d = g as Graphics2D
         g2d.color = nowFG
         g2d.fillRoundRect(

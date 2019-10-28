@@ -8,9 +8,48 @@
   <component name="ChangeListManager">
     <list default="true" id="430ede2e-14a8-4496-9ad4-256db40fae19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/META-INF/GWigets.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/ColorChangeThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$ButtonSeries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$Shapes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton$WhenMappings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/button/GButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/checkBox/GCheckBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/common/EventRW.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/common/FileWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/common/LinedFile$ReaderThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/common/LinedFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/common/Resource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/common/UIwigets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/common/UIwigetsManager$Companion$THEMES.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/common/UIwigetsManager$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/common/UIwigetsManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/passwordField/ColorChangeThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/passwordField/GpasswordField$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/passwordField/GpasswordField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/radioButton/ColorChangeThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/radioButton/GRadioButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/ColorChangeThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/GtextField$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/textField/GtextField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/DefaultDarkTheme.Gtheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion$colorEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion$themeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/FlavorResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/ThemeReader$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GWigets/studio/visualdust/uiwigets/theme/ThemeReader.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/button/GButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/button/GButton.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/radioButton/GRadioButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/singleSelection/GRadioButton.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/common/LinedFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/common/LinedFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/passwordField/GpasswordField.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/passwordField/GpasswordField.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/progressBar/GProgressBar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/progressBar/GProgressBar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/singleSelection/GSingleSelector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/singleSelection/GSingleSelector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/slider/GSlider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/slider/GSlider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/stage/GStage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/stage/GStage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/textField/GtextField.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/textField/GtextField.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/theme/FlavorResource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/theme/FlavorResource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/theme/ThemeReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/studio/visualdust/uiwidgets/theme/ThemeReader.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +67,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -43,7 +82,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WeTable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProgrammingBat" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -87,89 +126,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.studio.visualdust.test.UITestKt">
-    <configuration name="GSenceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="studio.visualdust.uiwidgets.stage.GSenceTest" />
-      <module name="GWidgets" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="studio.visualdust.uiwidgets.stage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QWE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="studio.visualdust.test.QWE" />
-      <module name="GWidgets" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="studio.visualdust.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="studio.visualdust.test.UITestKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="GWidgets" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="studio.visualdust.test.UITestKt" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="studio.visualdust.uiwidgets.slider.GSliderKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="GWidgets" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="studio.visualdust.uiwidgets.slider.GSliderKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="studio.visualdust.uiwidgets.slider.SlidertestKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="GWidgets" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="studio.visualdust.uiwidgets.slider.SlidertestKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.GSenceTest" />
-      <item itemvalue="Application.QWE" />
-      <item itemvalue="Kotlin.studio.visualdust.test.UITestKt" />
-      <item itemvalue="Kotlin.studio.visualdust.uiwidgets.slider.GSliderKt" />
-      <item itemvalue="Kotlin.studio.visualdust.uiwidgets.slider.SlidertestKt" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Kotlin.studio.visualdust.test.UITestKt" />
-        <item itemvalue="Application.QWE" />
-        <item itemvalue="Kotlin.studio.visualdust.uiwidgets.slider.SlidertestKt" />
-        <item itemvalue="Kotlin.studio.visualdust.uiwidgets.slider.GSliderKt" />
-        <item itemvalue="Application.GSenceTest" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="StructureViewFactory">
     <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
   </component>
@@ -210,7 +166,14 @@
       <workItem from="1571495105487" duration="150000" />
       <workItem from="1571539625762" duration="3162000" />
       <workItem from="1571560952915" duration="1262000" />
-      <workItem from="1571566192636" duration="9550000" />
+      <workItem from="1571566192636" duration="18674000" />
+      <workItem from="1571748248233" duration="1650000" />
+      <workItem from="1571751385643" duration="3009000" />
+      <workItem from="1571898652126" duration="653000" />
+      <workItem from="1571907755465" duration="10996000" />
+      <workItem from="1572006203120" duration="3701000" />
+      <workItem from="1572011777328" duration="992000" />
+      <workItem from="1572086847070" duration="1975000" />
     </task>
     <servers />
   </component>

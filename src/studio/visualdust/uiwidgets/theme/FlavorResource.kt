@@ -222,9 +222,8 @@ class FlavorResource {
             /**
              * Initialize the color vector of the dark-theme
              */
-            darkThemeColors = ThemeReader.readTheme(
-                File(ThemeReader.javaClass.getResource("DefaultDarkTheme.Gtheme").toURI())
-            )
+            darkThemeColors = ThemeReader.readTheme(File("C:\\Users\\Akasaki\\Desktop\\DefaultDarkTheme.Gtheme"))
+            //todo fix this bug
             nowTheme = darkThemeColors
 
             /**

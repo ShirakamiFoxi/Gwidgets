@@ -53,8 +53,7 @@ class GProgressBar : JPanel, UIwidgets {
     }
 
     init {
-//        this.background = nowBG
-//        this.add(textLabel)
+
     }
 
     var arcWidth = 10
@@ -93,6 +92,7 @@ class GProgressBar : JPanel, UIwidgets {
             1,
             (this.height * 0.85).toInt()
         )
+
         if (textPainted && !textSetted)
             displayStr = ((nowValue - minValue + 1) * 100 / (maxValue - minValue + 1)).toString() + "%"
         var fontMetrics = g2d.getFontMetrics(g2d.font)

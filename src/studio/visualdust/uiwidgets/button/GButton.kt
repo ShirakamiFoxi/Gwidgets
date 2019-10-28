@@ -1,14 +1,13 @@
 package studio.visualdust.uiwidgets.button
 
 import studio.visualdust.uiwidgets.common.EventRW
+import studio.visualdust.uiwidgets.common.UIwidgets
 import studio.visualdust.uiwidgets.theme.FlavorResource
 import studio.visualdust.uiwidgets.theme.FlavorResource.Companion.colorEnum.*
-import studio.visualdust.uiwidgets.common.UIwidgets
 import java.awt.*
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
 import java.awt.event.MouseListener
-import java.lang.Exception
 import javax.swing.JLabel
 import javax.swing.JPanel
 
@@ -29,7 +28,7 @@ open class GButton : JPanel, UIwidgets {
     var me = this
 
     enum class ButtonSeries {
-        DEFAULT, NEXT_FEATURED, OK_FEATURED, WARN_FEATURED, ERROR_FEATURED
+        DEFAULT, NEXT_FEATURED, OK_FEATURED, WARN_FEATURED, ERROR_FEATURED, OPT_TYPE
     }
 
     constructor() {}
@@ -82,6 +81,8 @@ open class GButton : JPanel, UIwidgets {
                 nowBG = bgColor
                 nowFG = fgColor
             }
+            else -> {
+            }
         }
     }
 
@@ -132,6 +133,7 @@ open class GButton : JPanel, UIwidgets {
     var arcWidth = 10
     var arcHeight = 10
     override fun paintComponent(g: Graphics?) {
+        super.paintComponent(g)
         this.background = this.parent.background
         super.paintComponent(g)
         val g2d = g as Graphics2D
